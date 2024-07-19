@@ -1,0 +1,52 @@
+.logo-img {
+  width: 200px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.headerNav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.headerNav ul li a {
+  color: #222;
+  font-size: 16px;
+}
+
+.searchImage {
+    width: 25px;
+}
+.searchA {
+    display: flex;
+}
+
+.globe {
+    width: 15px;
+}
+
+.lastHeaderDiv {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.lastHeaderDiv :nth-child(2) {
+    color: #182cc0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.lastHeaderDiv :nth-child(3) {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+    font-weight: 700;
+}

@@ -1,19 +1,27 @@
 /* header section */
 
+body {
+  background-color: #f9fafa;
+}
+
 .logo-img {
   width: 200px;
 }
 
 header {
+  width: 100%;
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   gap: 100px;
+  background-color: #fff;
+  margin-bottom: 50px;
 }
 
 .headerNav ul {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .headerNav ul li a {
@@ -177,3 +185,37 @@ a {
   padding: 160px 20px;
 }
 
+/* numbers section */
+
+.numbers-section {
+  padding: 60px 0px;
+  max-width: 1440px;
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.numbers-section div {
+  width: 340px;
+  height: 180px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 40px 48px;
+  border-radius: 8px ;
+}
+
+.numbers-section h4 {
+  font-size: 44px;
+  color: #141719;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.numbers-section span {
+  color: #555F62;
+}

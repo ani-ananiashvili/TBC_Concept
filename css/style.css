@@ -129,3 +129,51 @@ a {
   font-weight: 500;
   line-height: 1.5;
 }
+
+/* sets section */
+
+.sets-section {
+  max-width: 1440px;
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.sets-section h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sets-text h3 {
+  font-size: 24px;
+}
+
+.sets-text :nth-child(2) {
+  text-decoration: underline;
+}
+
+.set-images-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.relativeSetImage {
+  position: relative;
+}
+
+.sets-section img {
+  width: 438px;
+  border-radius: 10px;
+}
+
+.sets-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 160px 20px;
+}
+

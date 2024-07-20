@@ -279,4 +279,46 @@ a {
 
 .allOfferDiv {
   display: flex;
+  gap: 30px;
+}
+
+/* digital bank section */
+
+.digital-bank-section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.mobile-img {
+  width: 370px;
+}
+
+.digital-text {
+  width: 588px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.digital-text h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.digital-text h3 {
+  color: #6f787b;
+  line-height: 1.7;
+}
+
+.digital-text a img {
+  width: 133px;
+  color: #fff;
+  border: 1px solid #e1e4e5;
+  border-radius: 4px;
+  padding: 16px 32px;  
+  margin-right: 16px;
 }

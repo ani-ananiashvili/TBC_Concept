@@ -1,3 +1,5 @@
+/* header section */
+
 .logo-img {
   width: 200px;
 }
@@ -20,33 +22,95 @@ header {
 }
 
 .searchImage {
-    width: 25px;
+  width: 25px;
 }
 .searchA {
-    display: flex;
+  display: flex;
 }
 
 .globe {
-    width: 15px;
+  width: 15px;
 }
 
 .lastHeaderDiv {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .lastHeaderDiv :nth-child(2) {
-    color: #182cc0;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.4;
+  color: #182cc0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
-.lastHeaderDiv :nth-child(3) {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: #333;
-    font-weight: 700;
+.lastHeaderDiv :nth-child(4) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+  font-weight: 700;
+}
+
+.burger-menu {
+  width: 20px;
+  display: none;
+}
+
+/* workspace image section */
+
+.room-image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.room-image-section h5 {
+  margin-left: 195px;
+  color: #141719;
+  font-weight: 500;
+}
+
+.room-image-div {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  width: 540px;
+  margin: 140px 90px;
+}
+
+.image-text p {
+  font-size: 20px;
+}
+
+.image-text 
+h1,
+p,
+a {
+  color: #fff;
+}
+
+.image-text h1 {
+  font-size: 32px;
+}
+
+.image-text a {
+  background-color: #073997;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 50px;
 }

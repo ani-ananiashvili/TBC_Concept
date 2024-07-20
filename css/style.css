@@ -206,7 +206,7 @@ a {
   align-items: flex-start;
   gap: 16px;
   padding: 40px 48px;
-  border-radius: 8px ;
+  border-radius: 8px;
 }
 
 .numbers-section h4 {
@@ -217,5 +217,66 @@ a {
 }
 
 .numbers-section span {
-  color: #555F62;
+  color: #555f62;
+}
+
+/* offers section */
+
+.offers-section {
+  padding: 60px 0px;
+  max-width: 1440px;
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.offer-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer-title h2 {
+  font-size: 24px;
+  color: #141719;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.offer-title a {
+  color: #182cc0;
+}
+
+.offers-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  width: 405px;
+  height: 400px;
+  border-radius: 8px;
+  border: 1px solid #e1e4e5;
+}
+
+.offers-text img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.offers-text span {
+  font-size: 12px;
+  color: #6f787b;
+}
+
+.offers-text h3 {
+  color: #141719;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.offersP {
+  padding: 28px;
+}
+
+.allOfferDiv {
+  display: flex;
 }

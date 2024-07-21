@@ -412,3 +412,17 @@ footer a {
   font-weight: 700;
 }
 
+/* last footer */
+
+.lastFooter {
+  width: 100%;
+  padding: 60px 0px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.lastFooter img {
+width: 20px;
+}

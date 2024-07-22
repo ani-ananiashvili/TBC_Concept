@@ -244,7 +244,84 @@ a {
 
 /* offers section */
 
-.offers-section {
+.slider {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 33.3333%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.line-container {
+  flex-grow: 1;
+  position: relative;
+  margin-right: 20px;
+}
+
+.line {
+  width: 33.3333%;
+  height: 2px;
+  background: black;
+  opacity: 0.7;
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navigation button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.navigation button:hover {
+  color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .offers-section {
   padding: 60px 0px;
   max-width: 1440px;
   width: 1110px;
@@ -302,7 +379,7 @@ a {
 .allOfferDiv {
   display: flex;
   gap: 30px;
-}
+} */
 
 /* digital bank section */
 
@@ -359,6 +436,70 @@ a {
   font-size: 24px;
   font-weight: 700;
 }
+
+
+/*  */
+
+
+ .offers-section {
+  padding: 60px 0px;
+  max-width: 1440px;
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.offer-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer-title h2 {
+  font-size: 24px;
+  color: #141719;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.offer-title a {
+  color: #182cc0;
+}
+
+.offers-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  width: 405px;
+  height: 400px;
+  border-radius: 8px;
+  border: 1px solid #e1e4e5;
+}
+
+.offers-text img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.offers-text span {
+  font-size: 12px;
+  color: #6f787b;
+}
+
+.offers-text h3 {
+  color: #141719;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.offersP {
+  padding: 28px;
+}
+
+.allOfferDiv {
+  display: flex;
+  gap: 30px;
+} 
 
 /* personal banker image section */
 

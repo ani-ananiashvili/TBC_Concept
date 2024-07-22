@@ -5,45 +5,41 @@ body {
 }
 
 .logo-img {
-  width: 200px;
+  width: 165px;
 }
 
 header {
   width: 100%;
+  gap: 32px;
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  gap: 100px;
   background-color: #fff;
   margin-bottom: 50px;
+  top: 0;
+  position: fixed;
+  position: sticky;
 }
 
 .headerNav ul {
   display: flex;
   gap: 50px;
+  margin: 0px 40px;
 }
 
 .headerNav ul li a {
   color: #222;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .searchImage {
-  width: 25px;
-}
-.searchA {
-  display: flex;
-}
-
-.globe {
-  width: 15px;
+  width: 24px;
 }
 
 .lastHeaderDiv {
   display: flex;
-  align-items: center;
-  gap: 30px;
+  gap: 16px;
 }
 
 .lastHeaderDiv :nth-child(2) {
@@ -51,13 +47,23 @@ header {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  /* transition: .25s ease-in-out; */
+  margin: 2px;
+}
+
+.globe {
+  width: 16px;
 }
 
 .lastHeaderDiv :nth-child(4) {
   display: flex;
   align-items: center;
-  gap: 5px;
-  color: #333;
+  gap: 8px;
+  color: #555f62;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -319,10 +325,9 @@ a {
   color: #fff;
   border: 1px solid #e1e4e5;
   border-radius: 4px;
-  padding: 16px 32px;  
+  padding: 16px 32px;
   margin-right: 16px;
 }
-
 
 /* products section */
 
@@ -339,12 +344,9 @@ a {
   font-weight: 700;
 }
 
-
 /* personal banker image section */
 
-
 /* awards section */
-
 
 /* footer section */
 
@@ -357,7 +359,7 @@ footer {
 .footerLogo {
   display: flex;
   align-items: center;
-  padding: 0px 150px;  
+  padding: 0px 150px;
   justify-content: space-between;
 }
 
@@ -384,7 +386,6 @@ footer a {
   width: 40px;
   height: 40px;
   background-color: #f9fafa;
-  ;
   border-radius: 6px;
 }
 
@@ -424,5 +425,5 @@ footer a {
 }
 
 .lastFooter img {
-width: 20px;
+  width: 20px;
 }

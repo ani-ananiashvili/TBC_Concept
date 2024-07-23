@@ -1,3 +1,5 @@
+// slider section
+
 let currentSlide = 0;
 let isDragging = false;
 let startX, initialOffsetX;
@@ -65,3 +67,13 @@ showSlide(currentSlide);
 const progressLine = document.querySelector('.progress-line');
 progressLine.addEventListener('mousedown', onMouseDown);
 progressLine.addEventListener('touchstart', onMouseDown);
+
+
+
+// message button section
+
+document.getElementById('chatButton').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('hiddenButtons').classList.toggle('active');
+});
+

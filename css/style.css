@@ -53,6 +53,14 @@ header {
   margin: 2px;
 }
 
+.lastHeaderDiv :nth-child(2):hover {
+  transition-property: color;
+  transition-duration: 0.6s;
+  transition-delay: 0ms;
+  transition-timing-function: ease-out;
+  color: #1bb6e5;
+}
+
 .globe {
   width: 16px;
 }
@@ -70,9 +78,7 @@ header {
   display: none;
 }
 
-
 /* chat button */
-
 
 .chat-button {
   position: fixed;
@@ -94,8 +100,10 @@ header {
   background-color: #b0b0b0;
 }
 
-.dots::before, .dots::after, .dots {
-  content: '';
+.dots::before,
+.dots::after,
+.dots {
+  content: "";
   display: block;
   width: 6px;
   height: 6px;
@@ -103,12 +111,13 @@ header {
   border-radius: 50%;
 }
 
-.dots::before, .dots::after {
+.dots::before,
+.dots::after {
   margin: 3px 0;
 }
 
 .chat-button.active .dots {
-  content: '✖';
+  content: "✖";
   width: auto;
   height: auto;
   background: none;
@@ -145,21 +154,6 @@ header {
 .chat-button.active + .hidden-buttons {
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* workspace image section */
 
@@ -223,6 +217,14 @@ a {
   color: #fff;
 }
 
+.followButton:hover {
+  transition-property: color;
+  opacity: 8;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  color: #48bfe3;
+}
+
 .followButton :nth-child(1) {
   width: 16px;
 }
@@ -276,6 +278,7 @@ a {
 .set-images-div {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .relativeSetImage {
@@ -296,6 +299,14 @@ a {
   justify-content: flex-end;
   gap: 15px;
   padding: 160px 20px;
+}
+
+.sets-text :nth-child(2):hover {
+  transition-property: color;
+  opacity: 8;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
+  color: #4d5053;
 }
 
 /* numbers section */
@@ -342,10 +353,9 @@ a {
   width: 1000px;
   margin: 0 auto;
   margin-top: 50px;
-  height: 300px;
+  height: 500px;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .slides {
@@ -355,12 +365,13 @@ a {
 
 .slide {
   min-width: 33.3333%;
-  height: 100%;
+  margin-right: 15px;
+  border-radius: 8px;
+  border: 1px solid #e1e4e5;
 }
 
 .slide img {
   width: 100%;
-  height: 100%;
 }
 
 .navigation {
@@ -414,65 +425,24 @@ a {
   color: gray;
 }
 
-/* .offers-section {
-  padding: 60px 0px;
-  max-width: 1440px;
-  width: 1110px;
-  margin: 0 auto;
-}
-
-.offer-title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.offer-title h2 {
-  font-size: 24px;
-  color: #141719;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.offer-title a {
-  color: #182cc0;
-}
-
-.offers-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: #fff;
-  width: 405px;
-  height: 400px;
-  border-radius: 8px;
-  border: 1px solid #e1e4e5;
-}
-
-.offers-text img {
-  width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.offers-text span {
-  font-size: 12px;
-  color: #6f787b;
-}
-
-.offers-text h3 {
-  color: #141719;
-  font-weight: 700;
-  margin-top: 20px;
-}
-
-.offersP {
+.slidesP {
   padding: 28px;
 }
 
-.allOfferDiv {
-  display: flex;
-  gap: 30px;
-} */
+.slidesP h6 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6f787b;
+  margin-bottom: 4px;
+}
+
+.slidesP h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #141719;
+  margin-top: 10px;
+}
 
 /* digital bank section */
 
@@ -483,11 +453,11 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  padding: 32px 0px;
+  padding: 32px 0px 0px 0px;
 }
 
 .mobile-img {
-  width: 330px;  
+  width: 330px;
 }
 
 .digital-text {
@@ -574,7 +544,6 @@ a {
   margin-top: 20px;
 }
 
-
 .allOfferDiv {
   display: flex;
   gap: 30px;
@@ -632,6 +601,24 @@ a {
 
 /* awards section */
 
+.awardP {
+  padding: 28px;
+}
+
+.awardP h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #141719;
+}
+
+.awardP h4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #555f62;
+}
+
 /* footer section */
 
 footer {
@@ -644,7 +631,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 200px;
+  padding: 0px 240px;
 }
 
 footer a img {

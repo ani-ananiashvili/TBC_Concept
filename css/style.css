@@ -63,7 +63,6 @@ header {
   gap: 8px;
   color: #555f62;
   font-size: 14px;
-  font-weight: 700;
 }
 
 .burger-menu {
@@ -140,21 +139,21 @@ a {
 .followButton :nth-child(2) {
   font-size: 12px;
   font-weight: 700;
-  line-height: 1.33;  
+  line-height: 1.33;
 }
-
 
 /* big-message section */
 
 .big-message-section {
-  padding: 60px 0px;
   max-width: 1440px;
   width: 1110px;
   margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .big-message-section p {
-  font-size: 36px;
+  font-size: 32px;
   color: #141719;
   font-weight: 500;
   line-height: 1.5;
@@ -178,7 +177,8 @@ a {
   font-size: 24px;
 }
 
-.sets-text :nth-child(2) {
+.sets-text span {
+  font-size: 14px;
   text-decoration: underline;
 }
 
@@ -239,16 +239,18 @@ a {
 }
 
 .numbers-section span {
+  font-size: 16px;
+  font-weight: 500;
   color: #555f62;
 }
 
 /* offers section */
 
 .slider {
+  max-width: 1440px;
   width: 1000px;
   margin: 0 auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 50px;
   height: 300px;
   position: relative;
   overflow: hidden;
@@ -282,15 +284,25 @@ a {
 .line-container {
   flex-grow: 1;
   position: relative;
+  height: 2px;
+  background: gray;
   margin-right: 20px;
 }
 
-.line {
+.full-line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: gray;
+}
+
+.progress-line {
+  position: absolute;
   width: 33.3333%;
-  height: 2px;
-  background: black;
-  opacity: 0.7;
+  height: 100%;
+  background: blue;
   transition: transform 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .buttons {
@@ -310,16 +322,6 @@ a {
 .navigation button:hover {
   color: gray;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* .offers-section {
   padding: 60px 0px;
@@ -388,12 +390,13 @@ a {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #fff;
+  padding: 32px 0px;
 }
 
 .mobile-img {
-  width: 370px;
+  width: 330px;  
 }
 
 .digital-text {
@@ -406,10 +409,13 @@ a {
 .digital-text h2 {
   font-size: 24px;
   font-weight: 700;
+  line-height: 1.5;
+  color: #141719;
 }
 
-.digital-text h3 {
-  color: #6f787b;
+.digital-text p {
+  font-size: 14px;
+  color: #555f62;
   line-height: 1.7;
 }
 
@@ -424,24 +430,9 @@ a {
 
 /* products section */
 
-.products-section {
-  padding: 60px 0px;
-  max-width: 1440px;
-  width: 1110px;
-  margin: 0 auto;
-}
-
-.products-section h2 {
-  margin-bottom: 30px;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-
 /*  */
 
-
- .offers-section {
+.offers-section {
   padding: 60px 0px;
   max-width: 1440px;
   width: 1110px;
@@ -469,8 +460,8 @@ a {
   flex-direction: column;
   gap: 20px;
   background-color: #fff;
-  width: 405px;
-  height: 400px;
+  width: 420px;
+  height: 450px;
   border-radius: 8px;
   border: 1px solid #e1e4e5;
 }
@@ -492,16 +483,61 @@ a {
   margin-top: 20px;
 }
 
-.offersP {
-  padding: 28px;
-}
 
 .allOfferDiv {
   display: flex;
   gap: 30px;
-} 
+}
+
+.products-section {
+  padding: 60px 0px;
+  max-width: 1440px;
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.products-section img {
+  width: 100%;
+  height: 220px;
+}
+
+.products-section h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.offersP {
+  padding: 0px 28px;
+}
+
+.offersP h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #141719;
+  line-height: 30px;
+}
+
+.offersP span {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555f62;
+}
+
+.offersP span span {
+  font-size: 14px;
+  font-weight: 700;
+}
 
 /* personal banker image section */
+
+.image-text a {
+  font-size: 12px;
+}
+
+.image-text p {
+  width: 400px;
+}
 
 /* awards section */
 
@@ -516,8 +552,8 @@ footer {
 .footerLogo {
   display: flex;
   align-items: center;
-  padding: 0px 150px;
   justify-content: space-between;
+  padding: 0px 200px;
 }
 
 footer a img {
@@ -532,7 +568,6 @@ footer a {
 .footerNav {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 50px;
 }
 
 .footerNav img {

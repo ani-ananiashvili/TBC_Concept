@@ -1,119 +1,35 @@
-/* header section */
 
 body {
   background-color: #f9fafa;
-}
-
-.logo-img {
-  width: 165px;
-}
-
-header {
-  width: 100%;
-  gap: 32px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  top: 0;
-  position: fixed;
-  position: sticky;
-  z-index: 1;
-}
-
-.headerNav ul {
-  display: flex;
-  gap: 50px;
-  margin: 0px 40px;
-}
-
-.headerNav ul li a {
-  color: #222;
-  font-size: 14px;
-}
-
-.searchImage {
-  width: 24px;
-}
-
-.lastHeaderDiv {
-  display: flex;
-  gap: 16px;
-}
-
-.lastHeaderDiv :nth-child(2) {
-  color: #182cc0;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.4;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin: 2px;
-}
-
-.lastHeaderDiv :nth-child(2):hover {
-  transition-property: color;
-  transition-duration: 0.6s;
-  transition-delay: 0ms;
-  transition-timing-function: ease-out;
-  color: #1bb6e5;
-}
-
-.globe {
-  width: 16px;
-}
-
-.lastHeaderDiv :nth-child(4) {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #555f62;
-  font-size: 14px;
-}
-
-.burger-menu {
-  width: 20px;
-  display: none;
 }
 
 /* chat button */
 
 .chat-button {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
-  width: 50px;
-  height: 50px;
-  background-color: #5a5a5a;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  background-color: #424a4d;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 99;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s;
+  transition: background-color 0.25s ease-in;
 }
 
 .chat-button:hover {
   background-color: #b0b0b0;
 }
 
-.dots::before,
-.dots::after,
-.dots {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.dots::before,
-.dots::after {
-  margin: 3px 0;
+.dots img {
+  width: 35px;
+  margin-top: 3px;
 }
 
 .chat-button.active .dots {
@@ -126,19 +42,19 @@ header {
 }
 
 .hidden-buttons {
-  display: none;
   position: fixed;
-  bottom: 80px;
-  right: 20px;
+  bottom: 100px;
+  right: 19px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  display: none;
 }
 
 .small-button {
-  width: 40px;
-  height: 40px;
-  background-color: white;
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -155,16 +71,138 @@ header {
   display: flex;
 }
 
+/* header section */
+
+.logo-img {
+  width: 165px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #eef1f1;
+  padding: 0px 47px;
+  top: 0;
+  right: 0;
+  display: flex;
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+}
+
+.headerDiv {
+  max-width: 1110px;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+  
+}
+
+.headerNav ul {
+  display: flex;
+  gap: 32px;
+}
+
+.headerNav ul li a {
+  color: #555f62;
+  font-size: 14px;
+}
+
+.searchImage {
+  display: flex;
+  width: 24px;
+}
+
+.lastPartHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.follows a {
+  color: #182cc0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  align-items: center;
+  gap: 6px;
+}
+
+.follows span {
+  margin-top: 2px;
+}
+
+.follows a:hover {
+  transition-property: color;
+  transition-duration: 6s;
+  transition-delay: 0ms;
+  transition-timing-function: ease-out;
+  color: #1bb6e5;
+}
+
+.globe {
+  width: 16px;
+}
+
+.languageDiv a {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #555f62;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.languageDiv a:hover {
+  border-radius: 4px;
+  background-color: #d3d2d2;
+  transition-property: color;
+  transition-duration: 6s;
+  transition-delay: 0ms;
+  transition-timing-function: ease-out;
+}
+
+.burger-menu {
+  width: 20px;
+  display: none;
+}
+
+
+/* responsive header */
+
+@media (max-width: 768px) {
+ .headerNav {
+  display: none;
+ }
+
+ .languageDiv {
+  display: none;
+ }
+
+ .burger-menu {
+  display: block;
+ }
+}
+
 /* workspace image section */
 
 .room-image-section {
+  max-width: 1110px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 
-.room-image-section h5 {
-  padding: 24px 200px;
+.room-image-section h4 {
+  padding: 100px 200px;
   font-size: 12px;
   font-weight: 500;
   color: #555f62;

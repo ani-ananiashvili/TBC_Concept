@@ -1,3 +1,5 @@
+"use strict";
+
 // slider section
 
 let currentSlide = 0;
@@ -61,7 +63,7 @@ function onMouseUp() {
     document.removeEventListener('touchend', onMouseUp);
 }
 
-// Initial display
+// initial display
 showSlide(currentSlide);
 
 const progressLine = document.querySelector('.progress-line');

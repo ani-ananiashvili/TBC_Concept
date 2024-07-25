@@ -27,7 +27,7 @@ body {
 }
 
 .dots img {
-  width: 35px;
+  width: 25px;
   margin-top: 3px;
 }
 
@@ -60,6 +60,10 @@ body {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+.small-button:hover {
+  background-color: #1bb6e5;
 }
 
 .message-icon {
@@ -137,11 +141,8 @@ header {
 }
 
 .follows a:hover {
-  transition-property: color;
-  transition-duration: 6s;
-  transition-delay: 0ms;
-  transition-timing-function: ease-out;
   color: #1bb6e5;
+  transition: color 1s ease-out 0ms;
 }
 
 .globe {
@@ -161,10 +162,7 @@ header {
 .languageDiv a:hover {
   border-radius: 4px;
   background-color: #d3d2d2;
-  transition-property: color;
-  transition-duration: 6s;
-  transition-delay: 0ms;
-  transition-timing-function: ease-out;
+  transition: all 1s;
 }
 
 .burger-menu {
@@ -248,11 +246,9 @@ header {
   background-image: linear-gradient(15deg, #001682, #3240e5);
 }
 
-.followButton :hover {
-  transition-property: color;
-  opacity: 0.8;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-in-out;
+.followButton:hover {
+  color: #1bb6e5;
+  transition: color 1s ease-out 0ms;
 }
 
 .followButton :nth-child(1) {
@@ -427,6 +423,11 @@ header {
   gap: 6px;
 }
 
+.offer-title a:hover {
+  color: #1bb6e5;
+  transition: color 1s ease-out 0ms;
+}
+
 .slider {
   max-width: 1110px;
   width: 90%;
@@ -512,11 +513,18 @@ header {
   padding: 28px;
 }
 
-.slidesP h5 {
+.slidesP h5,
+.slidesP h5 span {
   font-size: 12px;
   font-weight: 700;
   color: #6f787b;
-  margin-bottom: 4px;
+  line-height: 20px;
+}
+
+.slidesP h5 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .slidesP p {
@@ -525,6 +533,25 @@ header {
   line-height: 30px;
   color: #141719;
   margin-top: 10px;
+}
+
+@media (max-width: 425px) {
+  .offer-title a {
+    display: none;
+  }
+
+  .slidesP p {
+    font-size: 12px;
+  }
+
+  .slidesP h5,
+  .slidesP h5 span {
+    font-size: 10px;
+  }
+
+  .slidesP h5 {
+    gap: 10px;
+  }
 }
 
 /* digital bank section */
@@ -578,11 +605,9 @@ header {
   margin-right: 16px;
 }
 
-.digitalApps a :hover {
-  transition-property: color;
+.digitalApps a:hover {
+  transition: color 1s ease-out 0ms;
   opacity: 0.8;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-in-out;
 }
 
 .digitalApps :nth-child(3) {
@@ -597,11 +622,11 @@ header {
   background-color: #f9fafa;
 }
 
-/* .digitalApp {
+.digitalApps span {
   font-size: 12px;
- font-weight: 700;
- line-height: 1.33;
-} */
+  font-weight: 700;
+  line-height: 1.33;
+}
 
 /* digital bank section responsive */
 
@@ -611,15 +636,25 @@ header {
   }
 
   .digitalApps :nth-child(3) {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 3px;
   }
 }
 
 /* products section */
 
 .products-section {
-  width: 100%;
   margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-div {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0px;
 }
 
 .products-section h2 {
@@ -628,10 +663,8 @@ header {
   font-weight: 700;
 }
 
-.products-div {
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 60px 0px;
+.offersP {
+  padding: 0px 20px;
 }
 
 .offers-text {
@@ -639,7 +672,7 @@ header {
   flex-direction: column;
   gap: 20px;
   background-color: #fff;
-  width: 420px;
+  width: 520px;
   height: 400px;
   border-radius: 8px;
   border: 1px solid #e1e4e5;
@@ -662,20 +695,10 @@ header {
   color: #6f787b;
 }
 
-.offers-text h3 {
-  color: #141719;
-  font-weight: 700;
-}
-
-.offersP {
-  padding: 0px 24px;
-}
-
 .offersP h3 {
   font-size: 16px;
   font-weight: 700;
   color: #141719;
-  line-height: 30px;
   margin-bottom: 16px;
 }
 
@@ -683,11 +706,33 @@ header {
   font-size: 14px;
   line-height: 1.7;
   color: #555f62;
+  margin-bottom: 16px;
 }
 
 .offersP span span {
   font-size: 14px;
   font-weight: 700;
+}
+
+/* products section responsive */
+
+@media (max-width: 1000px) {
+  .offers-text img {
+    height: auto;
+  }
+  .offers-text {
+    height: auto;
+  }
+}
+
+@media (max-width: 590px) {
+  .offersP h3 {
+    font-size: 12px;
+  }
+  .offersP span,
+  .offersP span span {
+    font-size: 10px;
+  }
 }
 
 /* personal banker image section */
@@ -733,11 +778,9 @@ header {
   background-image: linear-gradient(15deg, #001682, #3240e5);
 }
 
-.banker-text a:hover {
-  transition-property: color;
-  opacity: 0.8;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-in-out;
+.banker-text :hover {
+  color: #1bb6e5;
+  transition: color 1s ease-out 0ms;
 }
 
 /* personal banker image section responsive */
@@ -782,7 +825,7 @@ header {
 }
 
 .slide.awardImg {
-  height: 280px;
+  max-height: 280px;
 }
 
 .slider.awardSlider {
@@ -791,6 +834,51 @@ header {
 
 .slide.awardImg :hover {
   cursor: grab;
+}
+
+/* awards section responsive */
+
+@media (max-width: 840px) {
+  .slidesP {
+    padding: 15px;
+  }
+
+  .slidesP h4 {
+    font-size: 14px;
+  }
+  .slidesP span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .slidesP h4 {
+    line-height: 23px;
+  }
+
+  .slide.awardImg img {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .slide.awardImg img {
+    width: 80px;
+  }
+
+  .slidesP h4 {
+    font-size: 12px;
+  }
+
+  .slidesP span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slidesP h4 {
+    font-size: 10px;
+  }
 }
 
 /* footer section */
@@ -827,10 +915,7 @@ footer {
 .languageDiv a:hover {
   border-radius: 4px;
   background-color: #d3d2d2;
-  transition-property: color;
-  transition-duration: 6s;
-  transition-delay: 0ms;
-  transition-timing-function: ease-out;
+  transition: all 1s;
 }
 
 footer a img {
@@ -875,14 +960,58 @@ footer a {
   gap: 10px;
 }
 
+.blueNav ul li a:hover,
+.rules a:hover {
+  transition: color 1s ease-out 0ms;
+  color: #182cc0;
+}
+
+.lastNav ul li a:hover {
+  transition: all 1s;
+  text-decoration: underline;
+}
+
 .socMedia {
   margin: 40px 0px;
 }
+
+.socMedia a img:hover {
+  background-color: #dadbdb;
+  transition: color 1s ease-out 0ms;
+}
+
 
 .socMedia h3 {
   margin: 24px 0px;
   color: #141719;
   font-weight: 700;
+}
+
+/* footer responsive */
+
+@media (max-width: 768px) {
+  .lifeStyle,
+  .products,
+  .cafe {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  .nav ul li a {
+    display: none;
+  }
+
+  nav.blueNav.conceptNav ul li a {
+    display: flex;
+  }
+
+  .nav.lastNav ul li a {
+    display: flex;
+  }
+
+  .footerNav {
+    flex-direction: column;
+  }
 }
 
 /* last footer */
@@ -920,4 +1049,24 @@ footer a {
 .lastFooter span {
   font-size: 12px;
   color: #555f62;
+}
+
+/* last footer responsive */
+
+@media (max-width: 768px) {
+  .last-footer-div {
+    display: block;
+    flex-direction: column;
+  }
+  .rules {
+    flex-direction: column;
+  }
+
+  .rules {
+    gap: 20px;
+  }
+
+  .rules :nth-child(1) {
+    margin-top: 20px;
+  }
 }

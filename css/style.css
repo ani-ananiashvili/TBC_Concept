@@ -1,6 +1,17 @@
+/* body style */
+
 body {
   background-color: #f9fafa;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 4s ease, transform 3s ease;
 }
+
+body.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* chat button */
 
@@ -462,6 +473,8 @@ header {
 
 .slides {
   display: flex;
+  transition: transform 0.5s ease; 
+
 }
 
 .slide {
@@ -507,7 +520,7 @@ header {
   width: 33.3333%;
   height: 100%;
   background: rgb(22, 63, 212);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.1s ease;
   cursor: pointer;
 }
 
@@ -532,7 +545,7 @@ header {
 
 .slidesP {
   width: 100%;
-  padding: 28px;
+  padding: 26px;
 }
 
 .slidesP h5,
@@ -822,7 +835,7 @@ header {
   font-family: "BPG Arial", sans-serif;
 }
 
-.banker-text :hover {
+.banker-text a:hover {
   color: #1bb6e5;
   transition: color 1s ease-out 0ms;
 }
@@ -961,7 +974,6 @@ footer {
   font-size: 14px;
   font-weight: 700;
   font-family: "BPG Arial", sans-serif;
-
 }
 
 .languageDiv a:hover {
